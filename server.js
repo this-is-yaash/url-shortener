@@ -4,7 +4,8 @@ const ShortUrl = require('./models/shortUrl')
 const app = express()
 
 mongoose.connect('mongodb://localhost/urlShortener', {
-  useNewUrlParser: true, useUnifiedTopology: true
+  useNewUrlParser: true, 
+  useUnifiedTopology: true
 })
 
 app.set('view engine', 'ejs')
